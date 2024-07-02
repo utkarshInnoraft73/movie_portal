@@ -1,0 +1,45 @@
+uuid: f63712dc-343a-4021-8853-deee82c68e85
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.new
+    - node.type.review
+    - taxonomy.vocabulary.new_cateogary
+  module:
+    - comment
+    - contextual
+    - file
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+id: news_manager
+label: 'News Manager'
+weight: 5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'administer url aliases'
+  - 'create new content'
+  - 'create review content'
+  - 'create terms in new_cateogary'
+  - 'create url aliases'
+  - 'delete own new content'
+  - 'delete own review content'
+  - 'delete terms in new_cateogary'
+  - 'edit own comments'
+  - 'edit own new content'
+  - 'edit own review content'
+  - 'edit terms in new_cateogary'
+  - 'revert all revisions'
+  - 'revert term revisions in new_cateogary'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view term revisions in new_cateogary'
+  - 'view the administration theme'

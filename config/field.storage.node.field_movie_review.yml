@@ -1,0 +1,20 @@
+uuid: e0edb767-bf38-496c-b083-a7f622cc8ce0
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.field_movie_review
+field_name: field_movie_review
+entity_type: node
+type: comment
+settings:
+  comment_type: movie_review
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

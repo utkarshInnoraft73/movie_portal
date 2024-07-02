@@ -1,0 +1,38 @@
+uuid: 03aa8a8c-91c3-463b-a342-e9a01a3f1c88
+langcode: en
+status: true
+dependencies: {  }
+id: all_news
+label: 'All News'
+renderer: quick_tabs
+hide_empty_tabs: true
+default_tab: 9999
+options:
+  quick_tabs:
+    ajax: true
+    class: ''
+    style: pamela
+configuration_data:
+  -
+    title: ''
+    weight: 0
+    type: view_content
+    content:
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      qtabs_content:
+        options:
+          machine_name: new
+      block_content:
+        options:
+          bid: announce_block
+          block_title: ''
+          display_title: false
+      view_content:
+        options:
+          vid: all_news
+          display: page_1
+          args: ''

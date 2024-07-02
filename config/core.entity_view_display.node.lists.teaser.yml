@@ -1,0 +1,32 @@
+uuid: 39c1f833-cd2e-4eff-8ddd-b6694f33a5f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lists.body
+    - field.field.node.lists.field_moc
+    - node.type.lists
+  module:
+    - text
+    - user
+id: node.lists.teaser
+targetEntityType: node
+bundle: lists
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_moc: true

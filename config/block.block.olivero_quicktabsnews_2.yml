@@ -1,0 +1,25 @@
+uuid: ef994b2f-d9f1-4e79-91c4-595a9d982a86
+langcode: en
+status: true
+dependencies:
+  module:
+    - quicktabs
+    - system
+  theme:
+    - olivero
+id: olivero_quicktabsnews_2
+theme: olivero
+region: content
+weight: -8
+provider: null
+plugin: 'quicktabs_block:new'
+settings:
+  id: 'quicktabs_block:new'
+  label: News
+  label_display: visible
+  provider: quicktabs
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /news

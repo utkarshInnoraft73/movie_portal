@@ -1,0 +1,22 @@
+uuid: 3040d83b-a62f-4278-9947-cf5428c541fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: genre_review_movie_lists
+label: 'Genre Review movie lists'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'reviews/[term:name]'
+selection_criteria:
+  0f25c2c9-837f-4703-8fd5-2ee8d84377d7:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 0f25c2c9-837f-4703-8fd5-2ee8d84377d7
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      m: m
+selection_logic: and
+weight: -5
+relationships: {  }

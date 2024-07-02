@@ -1,0 +1,51 @@
+uuid: 081cf3c3-6466-482d-9cbb-ee681eba7d49
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.m
+    - views.view.reviwed_by_genre
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          afac6084-7853-4db1-b388-bce2ac1687e6:
+            uuid: afac6084-7853-4db1-b388-bce2ac1687e6
+            region: content
+            configuration:
+              id: 'views_block:reviwed_by_genre-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.m.default
+targetEntityType: taxonomy_term
+bundle: m
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  layout_builder__layout: true

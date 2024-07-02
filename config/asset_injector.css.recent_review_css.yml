@@ -1,0 +1,28 @@
+uuid: a3fb5761-49bf-43ca-a25d-a90fcd6145c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: recent_review_css
+label: 'Recent review CSS'
+code: |-
+  .field-content{
+  	display: flex !important;
+      column-gap: 10px !important;
+  }
+
+  .field-content img{
+  	margin-top:20px !important;
+  width: 70px !important;
+      height: 50px !important;
+  }
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home
+contexts: {  }
+conditions_require_all: true

@@ -1,0 +1,12 @@
+uuid: 453a9577-17fe-4e9c-8afa-9ed5dffb2def
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us
+label: Contact
+recipients:
+  - utkarsh.singh@innoraft.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''

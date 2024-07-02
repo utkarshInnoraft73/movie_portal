@@ -1,0 +1,90 @@
+uuid: e6748cbe-86ff-4e04-8e7e-5837a9cafa14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.lists.body
+    - field.field.node.lists.field_moc
+    - node.type.lists
+    - views.view.lists_movies
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          9cd90c91-6a0f-4e55-9f70-300945ecc26d:
+            uuid: 9cd90c91-6a0f-4e55-9f70-300945ecc26d
+            region: content
+            configuration:
+              id: 'extra_field_block:node:lists:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          a0a6b343-7054-45ea-8024-ab09c4789952:
+            uuid: a0a6b343-7054-45ea-8024-ab09c4789952
+            region: content
+            configuration:
+              id: 'field_block:node:lists:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          4d14da81-f5a8-4c4d-9da7-49793f92ef20:
+            uuid: 4d14da81-f5a8-4c4d-9da7-49793f92ef20
+            region: content
+            configuration:
+              id: 'views_block:lists_movies-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.lists.default
+targetEntityType: node
+bundle: lists
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_moc:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

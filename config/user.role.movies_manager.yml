@@ -1,0 +1,45 @@
+uuid: 6eceaaab-5d96-4154-a9c0-4fa4e28571a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.movies
+    - node.type.review
+    - taxonomy.vocabulary.m
+  module:
+    - comment
+    - contextual
+    - file
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+id: movies_manager
+label: 'Movies Manager'
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'administer url aliases'
+  - 'create movies content'
+  - 'create review content'
+  - 'create terms in m'
+  - 'create url aliases'
+  - 'delete own movies content'
+  - 'delete own review content'
+  - 'delete terms in m'
+  - 'edit own comments'
+  - 'edit own movies content'
+  - 'edit own review content'
+  - 'edit terms in m'
+  - 'revert all revisions'
+  - 'revert term revisions in m'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view term revisions in m'
+  - 'view the administration theme'

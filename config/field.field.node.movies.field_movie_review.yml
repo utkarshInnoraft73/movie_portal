@@ -1,0 +1,33 @@
+uuid: 4af4235d-cc26-418e-842a-8c2e5139ccca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_movie_review
+    - node.type.movies
+  module:
+    - comment
+id: node.movies.field_movie_review
+field_name: field_movie_review
+entity_type: node
+bundle: movies
+label: 'Movie review'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 50
+  anonymous: 0
+  form_location: true
+  preview: 1
+field_type: comment

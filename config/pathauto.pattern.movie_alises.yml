@@ -1,0 +1,22 @@
+uuid: 9f746854-9391-4b52-864a-45b90705cb7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: movie_alises
+label: 'Movie alises'
+type: 'canonical_entities:node'
+pattern: 'Movie/[node:nid]'
+selection_criteria:
+  b25cee59-21d2-448b-a797-c678ca0b4f08:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: b25cee59-21d2-448b-a797-c678ca0b4f08
+    context_mapping:
+      node: node
+    bundles:
+      movies: movies
+selection_logic: and
+weight: -5
+relationships: {  }

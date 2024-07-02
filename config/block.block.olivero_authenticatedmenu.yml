@@ -1,0 +1,33 @@
+uuid: 653a508a-bd8e-44d3-b6cd-1c6c97935a78
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.authenticated-menu
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_authenticatedmenu
+theme: olivero
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:authenticated-menu'
+settings:
+  id: 'system_menu_block:authenticated-menu'
+  label: 'authenticated menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

@@ -1,0 +1,9 @@
+uuid: fefa07c7-be66-4702-90da-45750506d391
+langcode: en
+status: true
+dependencies: {  }
+name: 'Movie Genre'
+vid: m
+description: 'This taxonomy defines the movie genere'
+weight: 0
+new_revision: false
